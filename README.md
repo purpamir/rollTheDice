@@ -1,2 +1,1 @@
-# rollTheDice
-A game that deals with dice numbers.
+Visit the webpage and try the game : https://purpamir.github.io/rollTheDice
