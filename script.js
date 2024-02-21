@@ -28,6 +28,7 @@ const newInitials = function () {
   player1.classList.remove("player--winner");
   player0.classList.add("player--active");
   player1.classList.remove("player--active");
+  document.querySelector(`.player--${activePlayer}`).classList.remove("cup");
   // Logical part
   playing = true;
   currentScore = 0;
