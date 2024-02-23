@@ -35,7 +35,6 @@ main {
   border-radius: 9px;
   overflow: hidden;
   display: flex;
-  position: relative;
 }
 
 .player {
