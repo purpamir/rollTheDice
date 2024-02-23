@@ -167,15 +167,6 @@ main {
 .hidden {
   display: none;
 }
-main::after {
-  content: "Tip : Collect 100 points to win the game";
-  position: absolute;
-  left: 50%;
-  top: 95%;
-  transform: translate(-50%);
-  font-size: 1.4rem;
-  font-weight: 600;
-}
 @keyframes moveInBottom {
   0% {
     opacity: 0;
