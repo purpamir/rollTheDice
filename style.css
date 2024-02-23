@@ -159,30 +159,45 @@ main {
 .player--winner {
   background-color: #2f2f2f;
 }
-
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
 }
-
 .hidden {
   display: none;
-}
-
-.cup::after {
-  content: "🏆";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -25%);
-  font-size: 5rem;
-  /* transform: translate(-50%, -50%); */
 }
 main::after {
   content: "Tip : Collect 100 points to win the game";
   position: absolute;
   left: 50%;
   top: 95%;
+  transform: translate(-50%);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.cup::after {
+  content: "🏆";
+  position: absolute;
+  top: 46%;
+  left: 43%;
+  font-size: 5rem;
+  animation: moveInBottom 0.3s ease-out 0.3s;
+  animation-fill-mode: backwards;
+}
+.tip {
+  position: absolute;
+  left: 50%;
+  top: 76%;
   transform: translate(-50%);
   font-size: 1.4rem;
   font-weight: 600;
