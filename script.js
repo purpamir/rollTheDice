@@ -29,6 +29,7 @@ const newInitials = function () {
   player0.classList.add("player--active");
   player1.classList.remove("player--active");
   document.querySelector(`.player--${activePlayer}`).classList.remove("cup");
+  document.querySelector(".tip").classList.remove("hidden");
   // Logical part
   playing = true;
   currentScore = 0;
