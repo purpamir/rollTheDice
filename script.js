@@ -72,6 +72,7 @@ btnHold.addEventListener("click", function () {
       scores[activePlayer];
     if (scores[activePlayer] >= 100) {
       playing = false; //to disable buttons
+      document.querySelector(".tip").classList.add("hidden");
       document.querySelector(`.player--${activePlayer}`).classList.add("cup");
       document
         .querySelector(`.player--${activePlayer}`)
